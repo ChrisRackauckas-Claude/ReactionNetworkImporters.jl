@@ -19,6 +19,14 @@ abstract type NetworkFileFormat end
 
 # exported data types
 #struct RSSANetwork <: NetworkFileFormat end
+"""
+    BNGNetwork()
+
+File-format selector for BioNetGen `.net` reaction network files.
+
+Pass `BNGNetwork()` to [`loadrxnetwork`](@ref) to parse a BioNetGen `.net` file
+into a Catalyst `ReactionSystem`.
+"""
 struct BNGNetwork <: NetworkFileFormat end
 
 ### System-Level Metadata Key Types and Accessors ###

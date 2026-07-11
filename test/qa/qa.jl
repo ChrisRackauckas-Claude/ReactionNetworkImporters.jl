@@ -18,6 +18,7 @@ run_qa(
             ),
         ),
     ),
+    api_docs_kwargs = (; rendered = true),
     # Many names from the heavy DSL deps (Catalyst/Symbolics/SymbolicUtils/
     # DataStructures/SparseArrays) are used implicitly via `using`; making them all
     # explicit is a risky mass refactor. Tracked in SciML/ReactionNetworkImporters.jl#179.
